@@ -1,0 +1,14 @@
+﻿<Window x:Class="PHTProject.HealthInsightWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PHTProject"
+        mc:Ignorable="d"
+        Title="Health Insight" Height="450" Width="800" Closing="Window_Closing">
+    <Canvas Background="#FFD2D0D0">
+        <TextBlock Text="Health Insights" FontSize="30" Canvas.Left="10" Canvas.Top="13" Width="776" Background="#FFF6ECEC" TextAlignment="Center" Height="46" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Height="116" Canvas.Left="123" TextWrapping="Wrap" Text="Insights" Canvas.Top="127" Width="515" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Background="#FFE2CBCB"/>
+
+    </Canvas>
+</Window>

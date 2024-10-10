@@ -1,0 +1,19 @@
+﻿<Window x:Class="PHTProject.AdminDashboardWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PHTProject"
+        mc:Ignorable="d"
+        Title="Admin DashBoard" Height="450" Width="800" Closing="Window_Closing">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/gopikahealth.jpg" Opacity="0.6"/>
+    </Window.Background>
+    <Canvas>
+        <Label Content="Admin DashBoard" Height="78" Canvas.Left="278" Canvas.Top="23" Width="499" FontSize="36" FontWeight="Bold" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#FFF4ECEC" />
+        <Button x:Name="btnUserManagement"  Content="User&#xD;&#xA;Management" Height="59" Canvas.Left="378" Canvas.Top="111" Width="136" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Button x:Name="btnPerformanceMonitoring" Content="system&#xD;&#xA;Performance&#xD;&#xA;Monitoring" Height="59" Canvas.Left="378" Canvas.Top="208" Width="136" HorizontalAlignment="Left" VerticalAlignment="Center" />
+        <Button x:Name="btnPlatformAnalysys" Content="Platform&#xD;&#xA;Analysis" Height="59" Canvas.Left="380" Canvas.Top="306" Width="136" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+
+    </Canvas>
+</Window>

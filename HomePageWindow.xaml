@@ -1,0 +1,31 @@
+﻿<Window x:Class="PHTProject.HomePageWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PHTProject"
+        mc:Ignorable="d"
+        Title="HomePageWindow" Height="450" Width="800" WindowState="Maximized" Closed="Window_Closed">
+    <Window.Background>
+        <ImageBrush ImageSource="Images/gopikahealth.jpg" Stretch="UniformToFill" Opacity="0.6"/>
+    </Window.Background>
+    <DockPanel>
+        <DockPanel DockPanel.Dock="Top">
+            <TextBlock Text="HOME PAGE"  FontSize="36" FontWeight="Bold" TextAlignment="Center" 
+               Foreground="#FFE51717" Background="White"
+               FontFamily="Copperplate Gothic Bold" Canvas.Left="0" Canvas.Top="0" Width="800" Height="60"/>
+        </DockPanel>
+
+        <DockPanel DockPanel.Dock="Top">
+            <StackPanel Orientation="Vertical" DockPanel.Dock="Top"
+                Width="237" Margin="250,0,0,0" Height="271">
+                <Button x:Name="btnLogin"  Content="Login" Width="147" Margin="10,10,10,10" FontSize="20" FontWeight="Bold" Height="60" Click="btnLogin_Click"/>
+                <Button x:Name="btnSignUp" Content="Sign Up" Width="147" Margin="10,10,10,10" FontWeight="Bold" FontSize="20" Height="60" Click="btnSignUp_Click"/>
+                <Button x:Name="btnContactSupport" Content="Learn More...." Width="147" Margin="10,10,10,10" FontSize="20" FontWeight="Bold" Height="60" Click="btnContactSupport_Click"/>
+            </StackPanel>
+        </DockPanel>
+
+
+    </DockPanel>
+
+</Window>
