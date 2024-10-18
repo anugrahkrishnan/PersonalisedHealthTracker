@@ -1,0 +1,28 @@
+﻿<Window x:Class="ProjectPHT.Pages.HealthHistoryWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProjectPHT.Pages"
+        mc:Ignorable="d"
+        Title="HealthHistoryWindow" Height="450" Width="800" Closing="Window_Closing">
+    <Canvas Background="#FFD2D0D0">
+        <TextBlock Text="Health History" FontSize="30" Canvas.Left="10" Canvas.Top="13" Width="776" Background="#FFF6ECEC" TextAlignment="Center" Height="46" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ComboBox Height="38" Canvas.Left="133" Canvas.Top="94" Width="197" 
+                  HorizontalAlignment="Left" VerticalAlignment="Center"
+          ItemsSource="{Binding Items}" SelectedItem="{Binding SelectedItem}"/>
+        <TextBlock Height="31" Canvas.Left="48" TextWrapping="Wrap" Text="Metrix" Canvas.Top="94" Width="77" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <DataGrid Height="214" Canvas.Left="103" Canvas.Top="166" Width="586" d:ItemsSource="{Binding History}" AutoGenerateColumns="False" IsReadOnly="True" SelectionMode="Single" AreRowDetailsFrozen="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Metric Type" Binding="{Binding MetricType}"/>
+                <DataGridTextColumn Header="Metric Value" Binding="{Binding MetricValue}"/>
+                <DataGridTextColumn Header="Created At" Binding="{Binding RecordedAt}"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock Height="31" Canvas.Left="409" TextWrapping="Wrap" Text="From" Canvas.Top="94" Width="57" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Center"/>
+        <DatePicker Canvas.Left="480" Canvas.Top="93" Height="36" Width="107" HorizontalAlignment="Center" VerticalAlignment="Top" SelectedDate="{Binding SelectedDate, Mode=TwoWay}"/>
+        <Button Content="OK" Height="37" Canvas.Left="620" Canvas.Top="93" Width="45" HorizontalAlignment="Left" VerticalAlignment="Center" Background="#FFD2D0D0" Command="{Binding ViewHistoryCommand}"/>
+
+    </Canvas>
+</Window>
