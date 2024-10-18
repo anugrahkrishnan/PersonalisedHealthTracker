@@ -1,0 +1,6 @@
+<local:Converter x:Key="Converter"/>
+<Style TargetType="Button" x:Key="btnPrimary">
+    <Setter Property="Background" Value="#FF0D6EFD"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="FontWeight" Value="Bold"/>
+</Style>
